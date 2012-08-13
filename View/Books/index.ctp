@@ -5,7 +5,7 @@
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('title'); ?></th>
 			<th><?php echo $this->Paginator->sort('publish_date'); ?></th>
-			<th><?php echo $this->Paginator->sort('cover'); ?></th>
+			<th><?php echo $this->Paginator->sort('author'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php
@@ -14,7 +14,7 @@
 		<td><?php echo h($book['Book']['id']); ?>&nbsp;</td>
 		<td><?php echo h($book['Book']['title']); ?>&nbsp;</td>
 		<td><?php echo h($book['Book']['publish_date']); ?>&nbsp;</td>
-		<td><?php echo h($book['Book']['cover']); ?>&nbsp;</td>
+		<td><?php echo h($book['Book']['author']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $book['Book']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $book['Book']['id'])); ?>

@@ -16,9 +16,9 @@
 			<?php echo h($book['Book']['publish_date']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Cover'); ?></dt>
+		<dt><?php echo __('Author'); ?></dt>
 		<dd>
-			<?php echo h($book['Book']['cover']); ?>
+			<?php echo h($book['Book']['author']); ?>
 			&nbsp;
 		</dd>
 	</dl>

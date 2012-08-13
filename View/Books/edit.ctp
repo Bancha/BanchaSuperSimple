@@ -6,7 +6,7 @@
 		echo $this->Form->input('id');
 		echo $this->Form->input('title');
 		echo $this->Form->input('publish_date');
-		echo $this->Form->input('cover');
+		echo $this->Form->input('author');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
