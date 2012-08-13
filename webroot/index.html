@@ -1,0 +1,40 @@
+<html>
+<head>
+	<!-- include ExtJS css -->
+	<link rel="stylesheet" href="http://cdn.sencha.io/ext-4.1.0-gpl/resources/css/ext-all.css" type="text/css" />
+	<!-- add Bancha Scaffold image classes -->
+	<style>
+		.icon-add { background-image:url(/img/icons/add.png) ! important; }
+		.icon-save { background-image:url(/img/icons/disk.png) ! important; }
+		.icon-reset { background-image:url(/img/icons/arrow_undo.png) ! important; }
+		.icon-upload { background-image:url(/img/icons/image_add.png) ! important; }
+	</style>
+</head>
+<body>
+
+<!-- include ExtJS -->
+<script type="text/javascript" src="http://cdn.sencha.io/ext-4.1.0-gpl/ext-all-dev.js"></script>
+
+<!-- include Bancha and the remote API -->
+<script type="text/javascript" src="/Bancha/js/Bancha.js"></script>
+<script type="text/javascript" src="/bancha-api/models/all.js"></script>
+
+<script type="text/javascript" src="/bancha-scaffold/latest-build/bancha-scaffold-debug.js"></script>
+
+<script>
+	Bancha.onModelReady('Book', function() {
+		Ext.create('Ext.grid.Panel', {
+			scaffold: 'Bancha.model.Book',
+			title: 'Book Management Grid with full CRUD support',
+			renderTo: Ext.getBody(),
+			frame: true,
+			width: 600,
+			height: 300,
+			style: 'margin: 50px auto;'
+		});
+	});
+
+</script>
+
+</body>
+</html>
