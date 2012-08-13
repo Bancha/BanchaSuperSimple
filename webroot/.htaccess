@@ -1,6 +1,20 @@
+# ----------------------------------------------------------------------
+# CakePHP rewrite rule
+# ----------------------------------------------------------------------
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^(.*)$ index.php [QSA,L]
 </IfModule>
+
+
+
+# ----------------------------------------------------------------------
+#  Disable MultiViews
+# ----------------------------------------------------------------------
+
+# When multiViews are on, apache "transforms" /bancha/bancha/translations/[lang].js
+# into bancha.php, and cake can't call the correct controller method. 
+# This fixes it.
+Options -Multiviews
