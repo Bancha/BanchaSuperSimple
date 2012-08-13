@@ -5,7 +5,7 @@ A Super Simple Bancha Project
 
 This tutorial will you help with your first steps of using Bancha.
 
-[Live demo](http://supersimple.banchaproject.com)
+[Live demo](http://supersimple.banchaproject.org)
 
 
 A quick setup of the final version
