@@ -6,6 +6,11 @@ App::uses('AppModel', 'Model');
  */
 class Book extends AppModel {
 
+	/**
+	 * Enable remote access to the model from ExtJS
+	 */
+	public $actsAs = array("Bancha.BanchaRemotable");
+
 /**
  * Validation rules
  *
