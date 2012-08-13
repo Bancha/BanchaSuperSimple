@@ -3,7 +3,7 @@
 A Super Simple Bancha Project
 =============================
 
-This tutorial will you help with your first steps of using Bancha:
+This tutorial will you help with your first steps of using Bancha.
 
 [Live demo](http://supersimpple.banchaproject.com)
 
@@ -15,7 +15,7 @@ __CakePHP Setup:__
 
 1. Download [CakePHP](http://www.cakephp.org) latest
 1. Delete the app folder
-1. Open the terminal inside the cake folder and type: git clone --recursive https://github.com/Bancha/BanchaTestproject.git app (alternativly download this project inside __/app__)
+1. Open the terminal inside the cake folder and type: git clone --recursive https://github.com/Bancha/BanchaSuperSimple.git app (alternativly download this project inside __/app__)
 1. Configure your _app/Config/database.php_, then go in your console inside _app/_ and execute _"./Console/cake" schema create_ to create all the tables
 1. Open __/bancha/setup-check.html__ to see if everything works.
 
