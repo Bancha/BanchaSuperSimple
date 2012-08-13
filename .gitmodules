@@ -1,4 +1,8 @@
 [submodule "Plugin/Bancha"]
 	path = Plugin/Bancha
 	url = git://github.com/Bancha/Bancha.git
-	update=checkout
+	update = checkout
+[submodule "webroot/bancha-scaffold"]
+	path = webroot/bancha-scaffold
+	url = git://github.com/Bancha/BanchaScaffold.git
+	update = checkout
